@@ -1,0 +1,94 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.main{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    overflow-y: scroll;
+    font-size: 24px;
+}
+
+.main::after{
+    content: "";
+    background-color: rgb(0, 0, 0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.main > h1,
+.main > p {
+    text-align: center;
+    font-family: 35px;
+    z-index: 2;
+    position: relative;
+}
+
+.main-content{
+    background-color: rgba(55, 167, 70, 0.1);
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px -1px 10px 5px green;
+}
+
+#name, #email, #number, #dropdown, #comment {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 0px;
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+label{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#student, #teacher, #employer, #astronaut{
+    height: 20px;
+    width: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+#comment{
+    min-height: 200px;
+}
+
+label[for=comment]{
+    margin-top: 30px;
+}
+
+#submit{
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #25ca64;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
